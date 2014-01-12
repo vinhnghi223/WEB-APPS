@@ -1,0 +1,64 @@
+/* @override 
+	http://iviewsource.com/exercises/json/mystyle.css */
+	
+body {
+	background: EEE7D5;
+	font-family: 'Libre Baskerville';
+}
+
+#librarybox {
+	width: 300px;
+	margin: 0 auto;
+	background: #001203;
+	padding: 10px 20px;
+	overflow: auto;
+}
+
+#librarybox h3, #librarybox h4 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+} 
+
+#librarybox h3 {
+	font-size: 2em;
+	line-height: .9em;
+	font-family: 'Open Sans', sans-serif;
+
+	color: white;
+}
+
+#librarybox h4 {
+	color: #95F50C;
+	font-weight: bold;
+	margin-bottom: 5px;
+	line-height: 1.2em;
+}
+
+#librarybox img {
+	float: right;
+	margin-left: 10px;
+	
+	width: 100px;
+}
+
+#librarybox p {
+	color: white;
+	font-size: 1em;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#librarybox #next_btn, #librarybox #prev_btn {
+	background: #d33682;
+	padding: 5px 10px;
+	border-radius: 10px;
+	margin: 10px 0;
+	display: inline-block;
+}
+
+#librarybox a#next_btn, #librarybox a#prev_btn {
+	text-decoration: none;
+	color: #FFB60C;
+}
+
+
