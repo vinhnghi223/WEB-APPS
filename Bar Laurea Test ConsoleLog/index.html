@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>BarLaurea BareBone</title>
+	<script src='https://cdn.firebase.com/v0/firebase.js'></script>
+</head>
+<body>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	<Script>
+		var myDataRef = new Firebase('https://lvn2.firebaseio.com/');
+      	myDataRef.once('value', function(snapshot) {
+      	  var refinedData = snapshot.val();
+		  dataHandler(refinedData);
+		});
+
+
+		function dataHandler(data){		
+			var articles=data.articles; //List of series name items
+			for (var key in articles) {
+				//console.dir(key); a key value, eg. dc36c8ca24aa967a2dd9cc92378ca33bc2195af0
+				var weekDay=articles[key]['title'];
+				var menuList=articles[key]['content:encoded']['p'];
+				console.log('----------------------------');
+				console.log(weekDay+' Lunch');
+				for(var i=0;i<menuList.length;i++){
+					if(menuList[i].hasOwnProperty('value'))
+						console.dir(menuList[i].value);
+				}
+			}
+
+		}
+	</script>
+</body>
+</html>
