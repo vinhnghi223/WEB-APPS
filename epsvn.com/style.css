@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin: 0; padding: 0 }
+.clr{clear: both;}
+
+.shadow {
+  -moz-box-shadow:    7px 7px 5px 0px #888888;
+  -webkit-box-shadow: 7px 7px 5px 0px #888888;
+  box-shadow:         7px 7px 5px 0px #888888;
+}
+
+#main{
+	width: 1000px;
+	margin: 0 auto;
+	}
+
+#left{
+	float: left;
+	width: 200px;
+	padding: 0px;
+	margin-right: 20px;
+	}
+	
+#right{
+	float:inherit;
+	margin: 0;
+	width: 100%;
+	}
+	
+
+#center{
+	width:100%;
+}
+	
+	
+#foot{
+	float:inherit;
+	width: 100%;
+	margin-top: 20px;
+	padding: 10px
+	color: #E09050;
+	position: inherit;
+	
+	}
+	
+	
+div.menu{
+	border:none;
+	padding: 0px;
+	margin: 0;
+	}
+	
+div.submenu{
+	
+	height: 30px;
+	font-size:15px;
+	visibility:hidden;
+	}
+	
+#project{
+	background-image: url(images/subpro.png);
+	background-repeat: no-repeat;
+	background-position: 250px 0px;
+	position:absolute;
+	width: 100%;
+	left:200px;
+	top: 83px;
+	padding-left:257px;
+	padding-top: 8px;
+	}
+
+#gallery{
+	background-image: url(images/subga.png);
+	background-repeat: no-repeat;
+	background-position: 250px 0px;
+	position:absolute;
+	width: 100%;
+	left:400px;
+	top: 83px;
+	padding-left:257px;
+	padding-top: 8px;
+	}
+
+#icamp{
+	background-image: url(images/subcamp.png);
+	background-repeat: no-repeat;
+	background-position: 250px 0px;
+	position:absolute;
+	width: 100%;
+	left:200px;
+	top: 83px;
+	padding-left:257px;
+	padding-top: 8px;
+	}
+	
+
+a
+{
+text-decoration:none;
+	color:#000;
+
+}
+
+.bot {
+
+color: #E09050;
+font-family:Arial, Helvetica, sans-serif;
+text-align:center;
+}
+
+.hlorg{
+	color: #E09050;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:28px;
+}
+	
+.mainlist{
+	list-style-image:url(images/minilogo.png);
+	
+}
+
+.link
+{
+	color:#F90;
+	font-size:20px;
+}
+
+.n2list
+{
+	color:white;
+	}
