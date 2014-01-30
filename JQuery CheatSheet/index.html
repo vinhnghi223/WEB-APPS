@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/selectionTraversal.css" rel="stylesheet">
+    <title>My Website</title>
+
+</head>
+
+</head>
+<body>
+<div class="container">
+	<h2>RETRIEVING PAGE CONTENT: SELECTION & TRAVERSAL</h2>
+	<div class="row">
+		<div class="col-lg-6">
+			
+				<div style="width:395px; height:480px; overflow: auto;" >
+				<h3>SELECTORS</h3>
+					<h4>Basic</h4>
+						<ul id="listBasicSelector">
+					        <li id="simple-p">$("p")</li>
+					       	<li id="dot-a">$(".a")</li>
+					        <li id="list-1">$("#list1")</li>
+					        <li id="pb">$("p.b")</li>
+						</ul>					
+				<h3>FILTERS</h3>
+					<h4>Basic</h4>
+						<ul id="listBasicFilter">
+					        <li id="pfirst">$("p:first")</li>
+					        <li id="plast">$("p:last")</li>
+					        <li id="peven">$("p:even")</li>
+					        <li id="podd">$("p:odd")</li>
+					        <li id="afirst">$(".a:first")</li>
+					        <li id="beven">$(".b:even")</li>
+					        <li id="pgt1">$("p:gt(1)")</li>
+					        <li id="pnotpeq2">$("p:not(p:eq(2))")</li>
+						</ul>
+					<h4>Attribute</h4>
+						<ul id="listAttributeFilter">
+							<li id="pclass">$("p[class]")</li>
+							<li id="pidpara1">$("p[id=para1]")</li>
+							<li id="pidpara">$("p[id^=para]")</li>
+							<li id="pidparalangen">$("p[id^=para][lang*=en-]")</li>
+						</ul>
+					<h4>Child, visibility, and content filters</h4>
+						<ul id="listChilViCon">
+							<li id="ChilViCon1">$("p:contains(3)")</li>
+					        <li id="ChilViCon2">$("p:parent")</li>
+					        <li id="ChilViCon3">$("ul:has(li[class=a])")</li>
+					        <li id="ChilViCon4">$("ul li:nth-child(3)")</li>
+					        <li id="ChilViCon5">$("ul li:nth-child(2n)")</li>
+						</ul>
+				</div> 	<!-- end overflow -->	
+		</div>	<!-- end column 1 -->	
+
+		<div class="col-lg-6">
+			&lt;ul id="list1"><ul id="list1">
+				<li class="a">&lt;li class="a">item 1</li&gt;</li>
+				<li class="a">&lt;li class="a">item 2</li&gt;</li>
+				<li class="b">&lt;li class="b">item 3</li&gt;</li>
+				<li class="b">&lt;li class="b">item 4</li&gt;</li>
+			</ul>&lt;/ul>
+			<p class="a">&lt;p&gt; class="a">This is paragraph 1 &lt;/p&gt;</p>
+			<p id="para1">&lt;p&gt; id="para1">This is paragraph 2&lt;/p&gt;</p>
+			<p class="b">&lt;p&gt; class="b">This is paragraph 3&lt;/p&gt;</p>
+			<p id="para4" lang="en-us">&lt;p&gt; id="para4" lang="en-us">This is paragraph 4&lt;/p&gt;</p>
+		</div>	<!-- end column 2 -->
+
+	</div> <!-- end row -->			
+</div> <!-- /container -->
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/selectionTraversal.js"></script>
+</body>
+</html>

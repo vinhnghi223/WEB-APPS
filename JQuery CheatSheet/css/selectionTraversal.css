@@ -1,0 +1,34 @@
+.a { color: Navy; }
+.b { color: Maroon; }
+/*SELECTOR*/
+	/*Basic*/
+		#simple-p:hover,
+		#dot-a:hover,
+		#list-1:hover,
+		#pb:hover,
+/*FILTERS*/
+	/*Basic*/
+		#pfirst:hover,
+		#plast:hover,
+		#peven:hover,
+		#podd:hover,
+		#afirst:hover,
+		#beven:hover,
+		#pgt1:hover,
+		#pnotpeq2:hover,
+	/*Attribute*/
+		#pclass:hover,
+		#pidpara1:hover,
+		#pidpara:hover,
+		#pidparalangen:hover,
+	/*Child, visibility, and content filters*/
+		#ChilViCon1:hover,
+		#ChilViCon2:hover,
+		#ChilViCon3:hover,
+		#ChilViCon4:hover,
+		#ChilViCon5:hover{color: red;}
+
+
+
+
+
