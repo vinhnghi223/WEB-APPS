@@ -1,0 +1,359 @@
+.defaultDot {
+
+    background: transparent;
+
+    border-radius: 20px;
+
+    color: #FFFFFF;
+
+    left: 0;
+
+    overflow: hidden;
+
+    padding: 3px;
+
+    position: absolute;
+
+    top: 0;
+
+    z-index: 1;
+
+}
+
+.labelTxt, .showHideBtn {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+.labelTxt {
+
+    display: inline-block;
+
+    float: left;
+
+    overflow-x: hidden;
+
+    overflow-y: auto;
+
+    padding: 4px;
+
+    position: absolute;
+
+    white-space: nowrap;
+
+}
+
+.labelTxt img {
+
+    border: 3px solid #FFFFFF;
+
+    float: left;
+
+    margin: 5px 10px 10px 0;
+
+    width: 80px;
+
+}
+
+.showHideBtn {
+
+    background: transparent;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    float: right;
+
+    height: 25px;
+
+    width: 24px;
+
+}
+
+.hideBtn {
+
+    background-position: left -25px;
+
+}
+
+.addScroll {
+
+    overflow: scroll;
+
+}
+
+.automotive .defaultDot {
+
+    background-color: transparent;
+
+    border-radius: 20px;
+
+    color: #CCCCCC;
+
+    font-size: 14px;
+
+    padding: 3px;
+
+}
+
+.labelTxt {
+
+    display: none !important;
+
+}
+
+.autokuva > img {
+
+    max-height: 575px;
+
+    padding-top: 20px;
+
+    width: 49%;
+
+}
+
+.autokuvaus table {
+
+    width: 100%;
+
+}
+
+.autokuvaus tr td:first-child {
+
+    background: none repeat scroll 0 0 #D3D3D3;
+
+    font-weight: 500;
+
+}
+
+.automotive .showHideBtn {
+
+    /*background: url("../images/camera-icon.png") no-repeat scroll 50% 45% / 25px auto rgba(0, 0, 0, 0);*/
+
+    border-radius: 0;
+
+    color: #FFFFFF;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    height: 100%;
+
+    text-align: center;
+
+    width: 100%;
+
+    transition: all 0.5s ease-in-out 0s;
+
+}
+
+.automotive .hideBtn {
+
+    /*background: url("../images/camera-iconac.png") no-repeat scroll 50% 35% / 25px auto rgba(0, 0, 0, 0);*/
+
+    background-position: 50% 15%;
+
+    transition: all 0.5s ease-in-out 0s;
+
+}
+
+
+
+.automotive .labelTxt {
+
+    padding: 10px;
+
+}
+
+.computer .defaultDot {
+
+    background-color: transparent;
+
+    border-radius: 5px;
+
+    color: transparent;
+
+    font-size: 14px;
+
+    padding: 3px;
+
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+
+}
+
+.computer .showHideBtn {
+
+    background: url("../images/auto_open_close_icn.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+
+    border-radius: 0;
+
+    height: 30px;
+
+    width: 30px;
+
+}
+
+.computer .hideBtn {
+
+    background-position: left -30px;
+
+}
+
+.computer .labelTxt {
+
+    padding: 5px 10px;
+
+}
+
+.photography .defaultDot {
+
+    background-color: #FFDD00;
+
+    border-radius: 0;
+
+    color: #000000;
+
+    font-size: 12px;
+
+    padding: 3px;
+
+}
+
+.photography .showHideBtn {
+
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+    border-radius: 0;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    height: 20px;
+
+    text-align: center;
+
+    width: 20px;
+
+}
+
+.photography .hideBtn {
+
+    background: url("../images/auto_open_close_icn.png") no-repeat scroll left -20px rgba(0, 0, 0, 0);
+
+    text-indent: -9999px;
+
+}
+
+.photography .labelTxt {
+
+    padding: 5px 10px;
+
+}
+
+.photography .labelTxt strong {
+
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+.photography .labelTxt img {
+
+    border: medium none;
+
+    margin: 5px 10px 5px 0;
+
+}
+
+#addDot_demo_auto .showHideBtn, #addDot_paloauto2 .showHideBtn, #addDot_paloauto_back .showHideBtn{
+
+    background: transparent;
+
+}
+
+#addDot_paloauto_back div {
+
+    height: 228px !important;
+
+    width: 207px !important;
+
+}
+
+
+
+#addDot_demo_auto {
+
+    background: url("../images/kuva0.jpg") repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
+
+}
+
+#addDot_demo_auto div, #addDot_paloauto2 div {
+
+    height: 180px !important;
+
+    width: 100px !important;
+
+}
+
+#addDot_alakerta div {
+
+    height: 70px !important;
+
+    width: 70px !important;
+
+}
+
+#addDot_alakerta_10 div {
+
+     height: 100px !important;
+
+     width: 300px !important;
+
+ }
+
+#addDot_alakerta1 div {
+
+    height: 100px !important;
+
+    width: 100px !important;
+
+}
+
+#addDot_piha div {
+
+    height: 70px !important;
+
+    width: 70px !important;
+
+}
+
+#addDot_ylakerta div {
+
+    height: 70px !important;
+
+    width: 70px !important;
+
+}
+
+.demo-content .keskita img {
+
+    width: 50%;
+
+}
+
+.keskita {
+
+    text-align: center;
+
+}

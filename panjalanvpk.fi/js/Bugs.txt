@@ -1,0 +1,7 @@
+heigt=0 
+
+jpg not JPG
+
+sua lai ten anh detail va bo sung 1 anh bi mat tich o rightview xe 1
+
+SET function invocation first and it solve the problem of hover

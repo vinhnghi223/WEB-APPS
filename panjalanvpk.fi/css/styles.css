@@ -1,0 +1,566 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+footer {
+    background: none repeat scroll 0 0 #333333;
+}
+header {
+    /*background: url("/sites/all/themes/anjalanvpk/images/anjalanpic.gif") no-repeat scroll 380px center rgba(0, 0, 0, 0);*/
+}
+.calenterilisaa {
+    background: none repeat scroll 0 0 #6AB922;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 0;
+    padding: 9px;
+    transition: all 0.2s ease-in-out 0s;
+}
+.calenterilisaa:hover {
+    font-size: 10px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out 0s;
+}
+.panel-pane.pane-custom.pane-1 {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border-radius: 10px;
+    padding: 10px;
+}
+.pane-custom img {
+    width: 45%;
+}
+.page-node-registrations .sticky-table th:nth-child(1),.page-node-registrations  .sticky-table th:nth-child(2),.page-node-registrations .sticky-table th:nth-child(4),
+.page-node-registrations  .sticky-table th:nth-child(5),.page-node-registrations .sticky-table th:nth-child(6),.page-node-registrations .sticky-table th:nth-child(7),
+.page-node-registrations .sticky-table th:nth-child(8){
+    display: none;
+}
+.page-node-registrations .sticky-enabled td:nth-child(1),.page-node-registrations  .sticky-enabled td:nth-child(2),.page-node-registrations  .sticky-enabled td:nth-child(4),.page-node-registrations  .sticky-enabled td:nth-child(5),.page-node-registrations  .sticky-enabled td:nth-child(6),.page-node-registrations  .sticky-enabled td:nth-child(7) {
+    display: none;
+}
+
+.button a {
+    background: none repeat scroll 0 0 #6AB922;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 6px;
+    text-decoration: none;
+}
+.button a:hover {
+    color: #000000;
+}
+.date-repeat-rule {
+    display: none;
+}
+.view-ajankohtaista a {
+    color: #6AB922;
+    text-decoration: none;
+}
+.front .forum-table a {
+    color: #6AB922;
+    font-weight: bold;
+    text-decoration: none;
+}
+.front .views-field.views-field-last-updated.active {
+    display: none;
+}
+.front .views-field.views-field-comment-count {
+    display: none;
+}
+.front .views-field.views-field-name {
+    display: none;
+}
+.front #views-exposed-form-advanced-forum-active-topics-panel-pane-1 .views-exposed-widgets.clearfix {
+    display: none;
+}
+.poll {
+    background: none repeat scroll 0 0 #F9F9F9;
+    margin-top: 75px;
+    overflow: hidden;
+    padding: 10px;
+}
+.poll .title {
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding: 10px 10px 10px 0;
+}
+#forum a {
+    color: #8D4036;
+    font-weight: bold;
+    text-decoration: none;
+}
+.pane-uusimmat-aiheet-panel-pane-1, .pane-foorumisidebar-panel-pane-1{
+    background: none repeat scroll 0 0 #F9F9F9;
+    padding: 10px;
+}
+span.date-display-single {
+    font-style: italic;
+}
+.pane-foorumisidebar-panel-pane-1 a, .pane-uusimmat-aiheet-panel-pane-1 a {
+    color: #6AB922;
+    font-weight: bold;
+    text-decoration: none;
+}
+.pane-node-field-milloin {
+    background: none repeat scroll 0 0 #F9F9F9;
+    padding: 10px;
+}
+.sf-menu.sf-style-space-orange li, .sf-menu.sf-style-space-orange li li, .sf-menu.sf-style-space-orange li li li, .sf-menu.sf-style-space-orange.sf-navbar {
+    background: none repeat scroll 0 0 #333333;
+}
+.hewston-slider-inner {
+    background: none repeat scroll 0 0 #F9F9F9;
+    margin-right: 20px;
+    padding: 10px;
+}
+.header__logo-image {
+    height: 180px;
+    margin-left: -10px;
+    opacity: 0;
+    width: 300px;
+}
+#content {
+    padding-top: 55px;
+}
+footer {
+    padding:15px;
+    color: white;
+    font-size: 0.75em;
+    margin-top: 10px;
+    padding-top: 35px;
+}
+#footer .block {
+    display: block;
+    float: left;
+    text-align: left;
+    width: 25%;
+}
+#footer a {
+    text-decoration: none;
+    color: #6AB922;
+}
+.views-field-view-node a {
+    background: none repeat scroll 0 0 #6AB922;
+    border: 1px solid #808080;
+    border-radius: 9px;
+    color: #FFFFFF;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+.views-field-view-node a:hover {
+    background: none repeat scroll 0 0 #8d4036;
+    transition: all 0.5s ease 0s;
+}
+.sf-menu.sf-style-space-orange li:hover, .sf-menu.sf-style-space-orange li.sfHover, .sf-menu.sf-style-space-orange li.active a, .sf-menu.sf-style-space-orange a:focus, .sf-menu.sf-style-space-orange a:hover, .sf-menu.sf-style-space-orange a:active, .sf-menu.sf-style-space-orange.sf-navbar li li {
+    background: none repeat scroll 0 0 #1D1D1D;
+    color: #FFFFFF;
+}
+.sf-menu.sf-style-space-orange.sf-navbar li ul {
+    background: none repeat scroll 0 0 #1D1D1D;
+}
+html {
+    font-family: Helvetica,Tahoma,Verdana,Sans-serif;
+    font-size: 100%;
+    font-weight: lighter;
+    line-height: 1.5em;
+}
+h2 {
+    font-weight: lighter;
+}
+.view-etusivusis h2 a {
+    color: #000000;
+    text-decoration: none;
+}
+.view-etusivusis h2 {
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
+.views-field-view-node {
+    margin-bottom: 35px;
+}
+.view-etusivusis tr {
+    border-bottom: 1px solid gray;
+}
+.view-etusivusis td {
+    border-top: 1px solid gray;
+    padding-top: 15px;
+}
+.facebook {
+    background: url("../images/icon_facebook.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #D3D3D3;
+    font-size: 14px;
+    padding: 5px 5px 5px 39px;
+}
+.twitter {
+    background: url("../images/icon_twitter.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #D3D3D3;
+    font-size: 14px;
+    padding: 5px 5px 5px 39px;
+}
+#footer .block {
+    display: block;
+    float: left;
+    text-align: left;
+    width: 25%;
+}
+.view-etusivusis .views-row {
+    background: none repeat scroll 0 0 #F9F9F9;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.sf-menu.sf-style-default li, .sf-menu.sf-style-default.sf-navbar {
+    background: #232323;
+}
+.sf-menu.sf-style-space-orange.sf-navbar a {
+    border: 0 none;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+html {
+    background: url("../images/brickwall_@2X.png") repeat scroll 0 0 / 110px 69px rgba(0, 0, 0, 0);
+}
+
+.hewston-middle-region {
+    background: none repeat scroll 0 0 #F9F9F9;
+    margin-right: 10px;
+    padding: 8px;
+    width: 31%;
+}
+.hewston-middle-region h2 {
+    margin: 0;
+}
+#panels-ipe-paneid-2 {
+    background: none repeat scroll 0 0 #F9F9F9;
+    padding-bottom: 1px;
+    padding-left: 15px;
+}
+#block-block-4 h2 {
+    padding-left: 75px;
+}
+#block-block-4 ul {
+    padding: 0 0 0 90px;
+}
+.pane-forum-active {
+    background: none repeat scroll 0 0 #F9F9F9;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#main{
+    padding-top: 0;
+}
+.header__region {
+    clear:none;
+}
+#superfish-1 {
+    margin-bottom: 0;
+    margin-left: -10px !important;
+    margin-top: 131px;
+    padding-right: 20px !important;
+}
+#secondary-menu {
+    background: none repeat scroll 0 0 #333333;
+    border-radius: 0 0 0 81px;
+    margin-right: -9px;
+    padding-bottom: 5px;
+    padding-left: 75px;
+    padding-top: 5px;
+    transition: all 0.5s ease-in-out 0s;
+}
+#secondary-menu:hover {
+    background: none repeat scroll 0 0 #8d4036;
+    transition: all 0.5s ease-in-out 0s;
+}
+#secondary-menu a {
+    color: white;
+    text-decoration: none;
+}
+#page-page {
+    background: white;
+    padding: 10px;
+}
+#page {
+    background: white;
+    box-shadow: 0 0 28px lightgray;
+}
+.sf-menu.sf-style-space-orange.sf-navbar a, .sf-menu.sf-style-space-orange .nolink {
+    border: 0 none;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.sf-menu.sf-style-space-orange.sf-navbar a, .sf-menu.sf-style-space-orange .nolink {
+    border: 0 none;
+}
+.sf-menu.sf-style-space-orange a, .sf-menu.sf-style-space-orange .nolink {
+    color: #F1F1F1;
+    padding: 0.75em 1em;
+}
+.flag-wrapper a {
+    background: none repeat scroll 0 0 #6AB922;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    padding: 6px;
+    text-decoration: none;
+}
+.flag-wrapper a:hover {
+    color: #000000;
+}
+.flag-message {
+    top: 2.75em;
+}
+a:link {
+}
+.sf-menu a, .sf-menu.sf-style-space-orange .nolink {
+    display: block;
+    position: relative;
+}
+.sf-navbar li ul, .sf-navbar li li li {
+    margin-left: 35px;
+    width: 91%;
+}
+.pager li {
+    list-style: none;
+}
+.view .date-nav-wrapper .date-prev {
+    right:85px;
+}
+.pane-fpid-4 {
+    background: none repeat scroll 0 0 #F8F8F8;
+}
+.pane-tapahtumat-panel-pane-1 {
+    background: none repeat scroll 0 0 #F9F9F9;
+    padding: 10px;
+}
+.view-tapahtumat a, .view-foorumisidebar a {
+    color: #6AB922;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+.view-tapahtumat p {
+    margin:0;
+}
+#panels-ipe-paneid-184 {
+    background: none repeat scroll 0 0 #F9F9F9;
+    padding: 10px;
+}
+.view-tapahtumat .views-row {
+    background: url("/sites/all/themes/anjalanvpk/images/kalenteri.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-top: 7px;
+}
+.view-tapahtumat ul {
+    list-style: none outside none;
+    padding:0;
+    margin:0;
+}
+.view-tapahtumat .views-field-body {
+    padding-bottom: 15px;
+}
+.view-tapahtumat .views-field-body {
+    padding-bottom: 15px;
+}
+.view-tapahtumat .views-field-field-featured-image {
+    float: left;
+}
+.view-foorumisidebar ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.view-foorumisidebar .views-row {
+    background: url("/sites/all/themes/anjalanvpk/images/forum.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    padding-left: 40px;
+}
+.view-tapahtumat .views-row:hover, .view-uusimmat-aiheet .views-row:hover, .view-foorumisidebar .views-row:hover {
+    background-size: 34px auto;
+    transition: all 0.2s ease-in-out 0s;
+}
+.front .views-field.views-field-body {
+    padding-bottom: 20px;
+    padding-top: 33px;
+}
+.view-uusimmat-aiheet ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.view-uusimmat-aiheet .views-row {
+    background: url("/sites/all/themes/anjalanvpk/images/forum.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+}
+.header {
+    background: url("../images/banneri.jpg") no-repeat scroll 0 0 / cover #323232;
+}
+.view-sis-ll-nseuranta-k-ytt-j- table {
+    border: 1px solid #D3D3D3;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    width: 100%;
+}
+.view-sis-ll-nseuranta-k-ytt-j- caption {
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.bryant-sidebar-inner {
+    background: none repeat scroll 0 0 #F8F8F8;
+    margin-right: 20px;
+    padding: 10px;
+}
+.bryant-sidebar-inner a {
+    color: #000000;
+    text-decoration: none;
+}
+.demo_content {
+    text-align: center;
+}
+.bryant-sidebar-inner a:hover {
+    color: #6AB922;
+    text-decoration: none;
+}
+.views-row p {
+    margin: 0.5em 0;
+}
+.sf-menu.sf-style-space-orange.sf-navbar a, .sf-menu.sf-style-space-orange .nolink {
+    border-right: 2px solid #1C1C1C;
+    padding-right: 30px;
+}
+#navigation .menu li {
+     padding: 0 !important;
+}
+#navigation .links, #navigation .menu {
+    border-top: 2px solid #1C1C1C;
+}
+#footer h2 {
+    text-transform: uppercase;
+}
+.sf-menu.sf-style-space-orange.sf-navbar li ul {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+span.date-display-single, .date-display-start, .date-display-end {
+    color: #000000;
+    font-size: 0.9em;
+    font-style: inherit;
+    font-weight: lighter;
+}
+/*Media query for tablet & mobile*/
+@media screen and (max-width: 830px){
+    .header__logo-image {
+    height: 55px;
+    margin-left: -10px;
+    opacity: 0;
+    width: 100%;
+    }
+    .header {
+    background: #333333;
+    }
+    .header__logo-image {
+        height: 140px;
+        margin-left: -10px;
+        max-width: 230px;
+        opacity: 1;
+        padding: 10px;
+    }
+}
+
+
+/*Media query for mobile*/
+@media screen and (max-width: 500px){
+    #footer .block {
+      display: block;
+      text-align: left;
+      width: 100%;
+    }
+    .panel-2col-stacked .panel-col-last {
+        display: none;
+    }
+    .panel-2col-stacked .panel-col-first {
+        width: 95%;
+    }
+    .hewston-middle-region {
+        width: 95%
+    }
+    table {
+        margin:0px !important;
+    }
+    #block-block-4 h2 {
+    padding-left: 0px;
+    }
+    #block-block-4 ul {
+    padding: 0 0 0 10px;
+    }
+    #auto1,#auto2,#auto3,#auto4,#auto5,#auto6,#auto7,#auto8,#auto9,#auto10 {
+        display: block !important;
+    }
+    .autokuva > img { 
+    padding-top: 20px;
+    width: 100%;
+    }
+    .header {
+        background: none;
+    }
+
+    #navigation {
+        left: 10%;
+        position: absolute;
+        top: 33%;
+    }
+    .header__logo {
+        float: none;
+    }
+    .header__logo-image {
+        height: 175px;
+        margin: 0 auto;
+        max-width: 275px;
+        opacity: 1;
+    }
+    header {
+        margin: 0 auto;
+        text-align: center;
+        background: none repeat scroll 0 0 #333333 !important;
+    }
+    #secondary-menu {
+        padding: 8px !important;
+    }
+    .header__secondary-menu {
+        float: none;
+    }
+    #secondary-menu {
+        background: none repeat scroll 0 0 #333333;
+        border-radius: 0;
+        margin-right: -9px;
+        padding-bottom: 5px;
+        padding-left: 75px;
+        padding-top: 5px;
+        transition: all 0.5s ease-in-out 0s;
+    }
+    #header, #content, #navigation, .region-sidebar-first, .region-sidebar-second, #footer {
+        padding-left: 5px;
+    }
+}
+
