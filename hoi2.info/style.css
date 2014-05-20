@@ -1,0 +1,50 @@
+@import url('../twentythirteen/style.css');
+
+/*
+Theme Name: holm2014
+Theme URI: holm2014
+Description: Twentythirteen child-theme with seriously good looks
+Author: Nghi le Vinh
+Version: 0.0.1
+Template: twentythirteen
+Tags: holm2014
+*/
+
+/*#E4AA7A*/
+.site-header {
+	background-image: none; !important
+	background-size: 1600px auto;
+	background-color: #FABC59; 
+	text-align:center;
+}
+
+/* Site title */
+h1{
+	color: #A1E7EF;
+}
+
+h1.site-title a{
+	text-decoration: none;
+}
+
+/* Description */
+h2{
+	color:#000100;
+}
+
+/* Menu */
+#navbar{
+	text-align:center;
+}
+
+/* Footer Menu */
+#site-generator{
+		text-align: center;
+}
+
+/* Button class style */
+.button {
+  width:259px;
+  display: block;
+  text-align: center;
+}
