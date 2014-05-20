@@ -2,7 +2,7 @@
 [Live Demo](http://anjalanvpk.fi/sis%C3%A4lt%C3%B6/ajoneuvot) |
 [Source Code](https://github.com/vinhnghi223/WEB-LAB/tree/gh-pages/anjalanvpk.fi)
 
-####www.hoi2.info
+####hoi2.info
 [Live Demo](http://www.viihdetta.fi/lindholmdemo/) |
 [Source Code](https://github.com/vinhnghi223/WEB-LAB/tree/gh-pages/hoi2.info)
 
