@@ -1,5 +1,5 @@
 ###WEBAPPS
-####Gallery Images
+####QR Generator
 [Live Demo (Not available yet)]() |
 [Source Code](https://github.com/vinhnghi223/WEB-APPS-PROJECTS/tree/gh-pages/QR-Generator/www)
 
