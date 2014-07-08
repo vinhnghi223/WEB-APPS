@@ -1,3 +1,19 @@
+This list comprizes a number of side projects/freelance projects/modules/prototypes that I've done so far.
+
+###WEBSITES
+####anjalanvpk.fi
+[Live Demo](http://anjalanvpk.fi/sis%C3%A4lt%C3%B6/ajoneuvot) |
+[Source Code](https://github.com/vinhnghi223/WEB-LAB/tree/gh-pages/anjalanvpk.fi)
+
+####hoi2.info
+[Live Demo](http://www.viihdetta.fi/lindholmdemo/) |
+[Source Code](https://github.com/vinhnghi223/WEB-LAB/tree/gh-pages/hoi2.info)
+
+####LinkedByMusic.com
+[Live Demo](http://www.codingisloving.com/WEBAPPS/smallprojects/LinkedByMusic.com/index.html) |
+[Source Code](https://github.com/vinhnghi223/WEB-LAB/tree/gh-pages/LinkedByMusic.com)
+
+
 ###WEBAPPS
 ####Beverage Slider
 [Live Demo](http://www.codingisloving.com/WEBAPPS/smallprojects/beverageslider/scroll2.html) |
@@ -27,17 +43,6 @@
 [Live Demo](http://www.codingisloving.com/WEBAPPS/smallprojects/Simple%20List/index.html) |
 [Source Code](https://github.com/vinhnghi223/WEB-LAB/tree/gh-pages/Simple%20List)
 
-###WEBSITES
-####anjalanvpk.fi
-[Live Demo](http://anjalanvpk.fi/sis%C3%A4lt%C3%B6/ajoneuvot) |
-[Source Code](https://github.com/vinhnghi223/WEB-LAB/tree/gh-pages/anjalanvpk.fi)
 
-####hoi2.info
-[Live Demo](http://www.viihdetta.fi/lindholmdemo/) |
-[Source Code](https://github.com/vinhnghi223/WEB-LAB/tree/gh-pages/hoi2.info)
-
-####LinkedByMusic.com
-[Live Demo](http://www.codingisloving.com/WEBAPPS/smallprojects/LinkedByMusic.com/index.html) |
-[Source Code](https://github.com/vinhnghi223/WEB-LAB/tree/gh-pages/LinkedByMusic.com)
 
 
