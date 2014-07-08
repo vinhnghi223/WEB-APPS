@@ -1,4 +1,4 @@
-This list comprizes a number of side projects/freelance projects/modules/prototypes that I've done so far.
+This list comprizes a number of side projects/freelance projects/modules/prototypes of websites and web apps (including apps that can be used in both desktop and smartphone) that I've done so far. Click on the Live Demo to see the final product, click on the Source Code to learn more how it was made.
 
 ###WEBSITES
 ####anjalanvpk.fi
