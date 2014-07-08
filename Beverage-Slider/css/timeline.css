@@ -1,0 +1,127 @@
+#timeline_slider {
+	width: 800px;
+	height:265px;
+	overflow: hidden;
+	display:block;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+#timeline_slider li{
+	width: 760px;
+	height:225px;
+	display:block;
+	padding: 20px;
+	overflow:hidden;
+}
+
+#timeline_slider li div {
+	display: block;
+	width:520px;
+	float:left;
+	margin-right:20px;
+	}
+
+#timeline_slider li p {
+	font-size: .9em;
+	line-height: 1.3em;
+	color: #584932;
+}
+
+#timeline_slider li h2 {
+	color: #79a33b;
+	font-size: 1.5em;
+	display:block;
+	margin-bottom:5px;
+	}
+
+#timeline_slider li span {
+	display: block;
+	width:220px;
+	height:225px;
+	float:left;
+	background-image: url(../images/timeline_photo_bkg.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	position:relative;
+}
+
+
+
+#timeline_slider li span img {
+	display: block;
+	width:195px;
+	height:195px;
+	position:absolute;
+	top:15px;
+	left:12px;
+}
+
+#timeline_prev{
+	width:38px;
+	height:58px;
+	display:block;
+	background-image: url(../images/timeline_arrows.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	position:absolute;
+	top:150px;
+	left:22px;
+	z-index:10;
+	}
+	
+#timeline_next{
+	width:38px;
+	height:58px;
+	display:block;
+	background-image: url(../images/timeline_arrows.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	position:absolute;
+	top:150px;
+	right:22px;
+	z-index:10;
+	}
+
+#timeline_nav {
+	background-image: url(../images/timeline_nav_bkg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	width: 772px;
+	height:32px;
+	padding-left:52px;
+	padding-right:52px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow:hidden;
+}
+
+#timeline_nav li {
+	display: block;
+	float: left;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	margin-right:3px;
+}
+
+#timeline_nav li a{
+	font-size: 0.7em;
+	color: #FC6;
+	text-decoration: none;
+	padding-bottom: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: #000 1px 1px 1px;
+}
+
+#timeline_nav li a.activeSlide {
+	border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-bottom-color: #600;
+	color: #FFF;
+}
