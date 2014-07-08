@@ -1,0 +1,304 @@
+/* These styles are for the landing age verification part of the page */
+
+#landing_wrap {
+	background-image: url(../images/landing_bkg.png);
+	background-repeat: no-repeat;
+	background-position: center 50px;
+	display: block;
+	height: 680px;
+	width: 320px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top:50px;
+	text-align:center;
+	}
+#age_form {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	text-align:center;
+
+}
+
+#location   {
+	background-color:transparent;
+	padding:5px;
+	width: 310px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	display: block;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 220px;
+}
+
+option {
+	background-color: #ECE2C4;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.number {
+	background-color:transparent;
+	border:0;
+	height: 45px;
+	width: 91px;
+	line-height:45px;
+	margin-left:4px;
+	display: inline;
+	float: left;
+	margin-top: 94px;
+	font-size: 45px;
+	color: #333;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: -3px;
+	font-weight: bold;
+}
+.middle {
+	margin-right: 14px;
+	margin-left: 18px;
+}
+
+.enter_btn {
+	background-color:transparent;
+	background-image: url(../images/enter.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	text-indent: -9999px;
+	display: block;
+	padding: 0px;
+	height: 52px;
+	width: 320px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin-top: 80px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	float: left;
+	outline:none;
+	}
+	
+	.enter_btn:hover {
+	background-position: center -52px;
+	cursor:pointer;
+	}
+
+label.english {
+	font-size: 16px;
+	color: #FC0;
+	margin-left:5px;
+	margin-right:5px;
+	}
+label.french {
+	font-size: 16px;
+	color: #FC0;
+	margin-left:5px;
+	margin-right:5px;
+	}
+
+
+input[type="submit"]::-moz-focus-inner {
+	    border: none;
+	}
+
+	
+label.error {
+	display:block;
+	float:left;
+	font-size: 11px;
+	line-height: 16px;
+	color: #FC0;
+	height: 16px;
+	width: 320px;
+	text-align:center;
+	display:block;
+}
+
+
+
+#error_msg {
+	padding:10px 0px 0px 0px;
+	display:block;
+	width:100%;
+	overflow:hidden;
+}
+
+#age_in_beers {
+	position: relative;
+	width: 800px;
+	display:none;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top:100px;
+	}
+
+#load {
+	overflow: hidden;
+	position: relative;
+	height: 200px;
+	width: 800px;
+	}
+
+#load div {
+	display: none;
+	float: left;
+	position: relative;
+	height: 200px;
+	width: 200px;
+}
+
+#load div span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	line-height: 20px;
+	font-weight: bold;
+	display: block;
+	position: absolute;
+	width:200px;
+	bottom: 30px;
+	left: 0px;
+	text-align: center;
+	color: #333;
+}
+
+#age_in_beers a {color:#FFF; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:1.5em;}
+
+#twenty_four {
+	background-image: url(../images/age_in_beers.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	}
+	
+#twelve {
+	background-image: url(../images/age_in_beers.png);
+	background-repeat: no-repeat;
+	background-position: -200px 0px;
+	}
+	
+#six {
+	background-image: url(../images/age_in_beers.png);
+	background-repeat: no-repeat;
+	background-position: -400px 0px;
+	}
+	
+#single {
+	background-image: url(../images/age_in_beers.png);
+	background-repeat: no-repeat;
+	background-position: -600px 0px;
+	}
+
+/* These styles are for the actual home page */
+
+#home_wrap{display:block;}
+
+#home_container {
+	width:918px;
+	height:250px;
+	position: relative;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../images/home_container_bkg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+#large_bottle {
+	display: block;
+	height: 614px;
+	width: 271px;
+	position: absolute;
+	z-index: 2000;
+	left: 0px;
+	top: 25px;
+
+	}
+
+#slider {
+	width: 600px;
+	height:285px;
+	overflow: hidden;
+	display:block;
+	position:absolute;
+	top:-34px;
+	left:250px;
+}
+
+#slider li{
+	width: 580px;
+	height:285px;
+	display:block;
+	padding-top: 40px;
+}
+
+#slider li p {
+	font-size: .9em;
+	line-height: 1.3em;
+	color: #584932;
+	display: block;
+	margin-top: 0px;
+	margin-left: 40px;
+}
+
+#slider a {
+		font-size: .9em;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #584932;
+	}
+
+#slider_prev{
+	width:45px;
+	height:25px;
+	display:block;
+	background-image: url(../images/next_prev.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	position:absolute;
+	top:-34px;
+	right:25px;
+	z-index:10;
+	}
+	
+#slider_next{
+	width:45px;
+	height:25px;
+	display:block;
+	background-image: url(../images/next_prev.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	position:absolute;
+	bottom:-10px;
+	right:25px;
+	z-index:10;
+	}
+
+#slide_count {
+	color: #79a33b;
+	position:absolute;
+	bottom:-10px;
+	right:80px;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #af6f0a;
+	font-style: italic;
+	font-weight: bold;
+	z-index:10;
+	text-align: left;
+	padding-right: 4px;
+	padding-left: 2px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: .9em;
+}
