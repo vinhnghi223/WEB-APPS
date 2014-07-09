@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />      
+    <meta name="msapplication-tap-highlight" content="no" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <!--external files-->
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.3.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.3.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+</head>
+<body style="font-family:Arial, Verdana;background-color:#fff;">
+    <section id="p3" data-role="page" >
+
+        <script>
+            jQuery(document).ready(function ($) {
+                var options = {
+                    $AutoPlay: false,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                    $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                    $AutoPlayInterval: 0,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                    $PauseOnHover: 0,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, default value is 1
+
+                    $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                    $SlideEasing: $JssorEasing$.$EaseLinear,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                    $SlideDuration: 3000,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                    $MinDragOffsetToSlide: 1,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                    $SlideWidth: 183,     //doesnt affect overal chain width                               //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                    $SlideHeight: 800, //600                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                    $SlideSpacing: 50, 	 //150				                //[Optional] Space between each slide in pixels, default value is 0
+                    $DisplayPieces: 3,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                    $ParkingPosition: 0,                              //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                    $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                    $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                    $DragOrientation: 1                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                };
+     
+                //responsive code begin
+                //you can remove responsive code if you don't want the slider scales while window resizes
+                function ScaleSlider(orientation) {          
+                    var bodyWidth = document.body.clientWidth;
+                    var bodyHeight = document.body.clientHeight;
+                    console.log(bodyWidth+"; "+bodyHeight);
+  
+                    if (bodyWidth){
+                       
+                        function setScale(scaleWidth){
+                            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+                            //jssor_slider1.$SetScaleWidth(Math.max(bodyWidth, scaleWidth));
+                            jssor_slider1.$SetScaleWidth(scaleWidth);
+                        }
+
+                        //portrait /landscape =1.7
+                        if(bodyWidth<321){//smartphone portrait width: 320
+                            console.log("smartphone portrait");
+                            setScale(800);
+                        }
+
+                        if(bodyWidth>320 &&  bodyWidth<481){  //smartphone landscape // width 480 1.04
+                            
+                            console.log("smartphone landscape");
+                            options.$DisplayPieces=4;
+                            setScale(500); 
+                        }
+
+                        if(bodyWidth>599 &&  bodyWidth<1024){  //tablet portrait
+                            console.log("tablet portrait");
+                            setScale(1600);
+                        }
+
+                        if (bodyWidth>1023){ //tablet landscape, can be tested on laptop's screen //1024 , 1.13
+                            console.log("tablet landscape");
+                            options.$DisplayPieces=5;
+                            options.$SlideSpacing=80; //SlideSpacing doesnt change slider container width
+                            setScale(900); 
+                            $('#slider1_container').css("left", "20px");
+                            $('.uSlides').css("left", "20px");
+                        }
+
+                    }else{
+                        window.setTimeout(ScaleSlider, 30); //may be no need this line
+                    }
+
+                }
+
+                ScaleSlider();
+                
+                //everytime orientation changes, call ScaleSlider
+                $(window).on("orientationchange",function(event){
+                  ScaleSlider();
+                });
+
+                if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                    $(window).bind('resize', ScaleSlider);
+                }
+
+                if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+                    $(window).bind("orientationchange", ScaleSlider);
+                }
+            });
+    
+        </script>
+
+        <style>
+            #slider1_container{
+                position: relative; top: 0px; left: 0px; width: 980px; height: 800px; overflow: hidden; 
+            }
+            .uSlides{
+                cursor: move; position: absolute; left: 0px; top: 0px; width: 980px; height: 800px; overflow: hidden;
+            }
+        </style>
+
+        <div data-role="content">
+            <div id="slider1_container" >
+                <div class="uSlides" u="slides">
+                    <div><a href="#pop2" data-rel="popup"><img u="image"  src="img/1.png" /></a></div>
+                    <div><a href="#pop2" data-rel="popup"><img u="image"  src="img/2.png" /></a></div>
+                    <div><a href="#pop2" data-rel="popup"><img u="image"  src="img/3.png" /></a></div>
+                    <div><a href="#pop2" data-rel="popup"><img u="image"  src="img/4.png" /></a></div>
+                    <div><a href="#pop2" data-rel="popup"><img u="image"  src="img/5.png" /></a></div>
+                    <div><a href="#pop2" data-rel="popup"><img u="image"  src="img/6.png" /></a></div>
+                    <div><a href="#pop2" data-rel="popup"><img u="image"  src="img/7.png" /></a></div>
+                    <div><a href="#pop2" data-rel="popup"><img u="image"  src="img/8.png" /></a></div>
+                    <div><a href="#pop2" data-rel="popup"><img u="image"  src="img/9.png" /></a></div>
+                </div>
+                <a style="display: none" href="http://www.jssor.com">slider html</a>
+            </div>
+        </div>
+
+        <div data-role="popup" id="pop2" class="ui-content" data-position-to="window">
+            <b>Tuotetiedot: p2</b> <br/>
+            <b>Oluttyyppi:</b> lager <br/>
+            <b>Alkoholi:</b> 2.8% <br/>
+            <b>Kantavierre:</b> 8.3% <br/>
+            <b>Väri:</b> 50EBC <br/>
+            <b>Katkerot:</b> 1 EBU <br/><br/>
+
+            <b>100 ml sisältää</b> <br/>
+            <b>Energia: 2000 kJ / 30kcal <br/>
+            <b>Proteiini: 0.2 g <br/>
+            <b>Rasva: 0g <br/>
+        </div>  
+
+    </section>
+    <!-- Jssor Slider End -->
+</body>
+</html>
