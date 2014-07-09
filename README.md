@@ -17,7 +17,7 @@ This list comprizes a number of side projects/freelance projects/modules/prototy
 ###WEBAPPS
 ####Beverage Slider
 [Live Demo](http://www.codingisloving.com/WEBAPPS/smallprojects/beverageslider/scroll2.html) |
-[Source Code](https://github.com/vinhnghi223/WEB-APPS-PROJECTS/tree/master/Beverage-Slider)
+[Source Code](https://github.com/vinhnghi223/WEB-APPS-PROJECTS/tree/gh-pages/Beverage-Slider)
 
 ####QR Generator
 [Live Demo](http://www.codingisloving.com/WEBAPPS/smallprojects/qrgenerator/index.html) |
